@@ -1,6 +1,3 @@
-from ast import Return
-
-
 userNumber = int(input(("Enter your number: ")))
 
 

@@ -1,19 +1,18 @@
 userList = input("Enter your numbers: ")
 
 lst = userList.split(",")
+lst = [int(x) for x in lst]
 lst.sort()
 print ("Your list: ", [int(x) for x in lst])
 
 print ("=====================")
 
-print ("Max number: ", max(lst))
+print ("Max number: ", lst [-1])
 print ("Min number: ", lst [0])
 
 print ("=====================")
 
-sumNumber = lst.pop(0)
-sumNumber = lst.pop(-1)
+lst.pop(-1)
+lst.pop(0)
 
-lst = [int(x) for x in lst]
-
-print ("Sum of all other numbers: ", sum(lst))
+print ("Sum of all other numbers: ", sum(lst))  
